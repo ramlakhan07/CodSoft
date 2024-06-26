@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="clc.css">
+
+</head>
+<body>
+    
+    <h3>WELCOME !</h3>
+    <br>
+    <div class="container">
+        <input type="text" class="input" name="screen" id="screen" placeholder="Give Chalange!"/>
+        <br>
+        <div class="btn">
+            <button id="btns" value="7" onclick="Solve('7')">7</button>
+            <button id="btns" value="8" onclick="Solve('8')">8</button>
+            <button id="btns" value="9" onclick="Solve('9')">9</button>
+            <button id="btns" value="/" onclick="Solve('/')">/</button>
+        </div>
+        <div class="btn">
+            <button id="btns" value="4" onclick="Solve('4')">4</button>
+            <button id="btns" value="5" onclick="Solve('5')">5</button>
+            <button id="btns" value="6" onclick="Solve('6')">6</button>
+            <button id="btns" value="*" onclick="Solve('*')">*</button>
+        </div>
+        <div class="btn">
+            <button id="btns" value="1" onclick="Solve('1')">1</button>
+            <button id="btns" value="2" onclick="Solve('2')" >2</button>
+            <button id="btns" value="3" onclick="Solve('3')" >3</button>
+            <button id="btns" value="-" onclick="Solve('-')">-</button>
+        </div>
+        <div class="btn">
+            <button id="btns" value="0" onclick="Solve('0')">0</button>
+            <button id="btns" value="." onclick="Solve('.')">.</button>
+            <button id="btns" value="+" onclick="Solve('+')">+</button>
+            <button id="btns" value="=" onclick="Result()" style="background-color: rgb(255, 255, 255); color: black; font-size: 20px;">=</button>
+        </div>  
+        <div class="c">
+            <button id="clear" onclick="Clear()">Clear</button>
+        </div>
+        <!-- <button id="calculate">claculate</button> -->
+    </div>
+
+    <script src="clc.js"></script>
+</body>
+</html>
